@@ -39,7 +39,7 @@ function Form() {
 
   // Data read function
   useEffect(() => {
-    fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`)
+    fetch(`https://github.com/webdeveloperbashar/MERN-stack-CRUD-server/salaries`)
       .then((res) => res.json())
       .then((data) => setDbValue(data));
   }, []);
@@ -50,7 +50,7 @@ function Form() {
     button.innerText = "Submit";
     form.nodeValue = "";
     clearForm();
-    fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`, {
+    fetch(`https://github.com/webdeveloperbashar/MERN-stack-CRUD-server/salaries`, {
       method: "POST",
       headers: {
         "content-type": "application/json; charset=UTF-8",
@@ -58,21 +58,21 @@ function Form() {
       body: JSON.stringify(values),
     })
     .then(() => {
-      fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`)
+      fetch(`https://github.com/webdeveloperbashar/MERN-stack-CRUD-server/salaries`)
         .then((res) => res.json())
         .then((data) => setDbValue(data));
     });
   };
   // Delete function
   const handleDelete = (id) => {
-    fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries/${id}`, {
+    fetch(`https://github.com/webdeveloperbashar/MERN-stack-CRUD-server/salaries/${id}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json; charset=UTF-8",
       },
       body: JSON.stringify(values),
     }).then(() => {
-      fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`)
+      fetch(`https://github.com/webdeveloperbashar/MERN-stack-CRUD-server/salaries`)
         .then((res) => res.json())
         .then((data) => setDbValue(data));
     });
