@@ -39,7 +39,7 @@ function Form() {
 
   // Data read function
   useEffect(() => {
-    fetch(`http://localhost:2020/salaries`)
+    fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`)
       .then((res) => res.json())
       .then((data) => setDbValue(data));
   }, []);
@@ -50,7 +50,7 @@ function Form() {
     button.innerText = "Submit";
     form.nodeValue = "";
     clearForm();
-    fetch(`http://localhost:2020/salaries`, {
+    fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`, {
       method: "POST",
       headers: {
         "content-type": "application/json; charset=UTF-8",
@@ -58,21 +58,21 @@ function Form() {
       body: JSON.stringify(values),
     })
     .then(() => {
-      fetch(`http://localhost:2020/salaries`)
+      fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`)
         .then((res) => res.json())
         .then((data) => setDbValue(data));
     });
   };
   // Delete function
   const handleDelete = (id) => {
-    fetch(`http://localhost:2020/salaries/${id}`, {
+    fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries/${id}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json; charset=UTF-8",
       },
       body: JSON.stringify(values),
     }).then(() => {
-      fetch(`http://localhost:2020/salaries`)
+      fetch(`https://webdeveloperbashar.github.io/MERN-stack-CRUD-client/salaries`)
         .then((res) => res.json())
         .then((data) => setDbValue(data));
     });
@@ -81,12 +81,6 @@ function Form() {
   const handleEdit = (id) => {
     const getValue = dbValue.find((el) => el._id === id);
     const { name, salary, profession, days } = getValue;
-    // const [values, setValues] = useState({
-    //   name: "",
-    //   salary: "",
-    //   profession: "",
-    //   days: "",
-    // });
     setValues({
       name: name,
       salary: salary,
