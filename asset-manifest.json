@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MERN-stack-CRUD-client/static/css/main.a167361f.chunk.css",
+    "main.js": "/MERN-stack-CRUD-client/static/js/main.9a44cdb1.chunk.js",
+    "main.js.map": "/MERN-stack-CRUD-client/static/js/main.9a44cdb1.chunk.js.map",
+    "runtime-main.js": "/MERN-stack-CRUD-client/static/js/runtime-main.0985d633.js",
+    "runtime-main.js.map": "/MERN-stack-CRUD-client/static/js/runtime-main.0985d633.js.map",
+    "static/js/2.8cf5ee85.chunk.js": "/MERN-stack-CRUD-client/static/js/2.8cf5ee85.chunk.js",
+    "static/js/2.8cf5ee85.chunk.js.map": "/MERN-stack-CRUD-client/static/js/2.8cf5ee85.chunk.js.map",
+    "static/js/3.4dd6eaaa.chunk.js": "/MERN-stack-CRUD-client/static/js/3.4dd6eaaa.chunk.js",
+    "static/js/3.4dd6eaaa.chunk.js.map": "/MERN-stack-CRUD-client/static/js/3.4dd6eaaa.chunk.js.map",
+    "index.html": "/MERN-stack-CRUD-client/index.html",
+    "static/css/main.a167361f.chunk.css.map": "/MERN-stack-CRUD-client/static/css/main.a167361f.chunk.css.map",
+    "static/js/2.8cf5ee85.chunk.js.LICENSE.txt": "/MERN-stack-CRUD-client/static/js/2.8cf5ee85.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0985d633.js",
+    "static/js/2.8cf5ee85.chunk.js",
+    "static/css/main.a167361f.chunk.css",
+    "static/js/main.9a44cdb1.chunk.js"
+  ]
+}
